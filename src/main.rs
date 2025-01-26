@@ -1,5 +1,6 @@
 mod models;
 mod services;
+mod utils;
 
 
 fn main() {
