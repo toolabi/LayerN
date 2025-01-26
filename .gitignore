@@ -1,1 +1,5 @@
 /target
+package-lock.json
+node_modules
+cargo.lock
+circuits/*/
