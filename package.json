@@ -1,0 +1,20 @@
+{
+  "name": "layern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "ganache": "^7.9.2",
+    "ganache-cli": "^6.12.2",
+    "snarkjs": "^0.6.11"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "foundry": ">=1.0.0"
+  },
+  "scripts": {
+    "install-rapidsnark": "git clone https://github.com/iden3/rapidsnark.git circuits/rapidsnark && cd circuits/rapidsnark && npm install",
+    "install-deps": "npm run install-rapidsnark install-ecdsa"
+  }
+}
