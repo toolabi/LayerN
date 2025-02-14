@@ -18,7 +18,7 @@ impl SMerkleTree {
     fn construct(nodes: Vec<Node>) -> SMerkleTree {
         println!("construct merkle tree");
         SMerkleTree {
-            root: Node::new("root".to_string(), 0)
+            root: Node::new("root".to_string(), BigInt::from(0))
         }
     }
     fn add_node(&self, node: Node) {
@@ -33,7 +33,7 @@ impl SMerkleTree {
     }
     fn combine_nodes(&self, node1: Node, node2: Node) -> Node {
         println!("combine nodes{:?}{:?}", node1, node2);
-        Node::new("combine".to_string(), 0)
+        Node::new("combine".to_string(), BigInt::from(0))
     }
     
 }
